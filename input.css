@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root {
+   --primary-color: #003B73;
+   --secondary-color: #60A3D9;
+   --tertiary-color: #B89C93;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   background-color:aliceblue;
+   max-width: 900px;
+   margin: auto;
+   font-family: 'Lato', sans-serif;
+}
+a {
+   text-decoration: none;
+}
+.yellow {
+   color: #ffc75f;
+}
+.orange {
+   color: #ff6791;
+}
+.purple {
+   color: #845ec2;
+}
+.main-container {
+   min-height: 80vh;
+   margin: 9vh auto;
+   background-color: white;
+   border-radius: .3rem;
+   
+}
+.container {
+   height: inherit;
+}
+.main-container .contents {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1rem;
+   padding: 1rem;
+   height: inherit;
+}
+.main-container .gradient {
+   grid-column: 1/2;
+   border-radius: .3rem;
+
+   background-image: url('imgs/more_graphics_FK5l7W.svg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 100%;
+
+}
+.main-container .gradient ul {
+   margin: 1.5rem 1.5rem;
+}
+.main-container .gradient span {
+   display: flex;
+   align-items: center;
+   padding: .5rem 0;
+}
+.main-container .gradient i {
+   font-size: 1rem;
+}
+.main-container .gradient a {
+   background-color: transparent;
+   border: 2px white solid;
+   border-radius: 50%;
+   color: white;
+   margin-right: 1rem;
+}
+.main-container .gradient a:hover {
+   background-color: var(--secondary-color);
+   border: 2px var(--secondary-color) solid;
+}
+.main-container .gradient a:focus {
+   color: var(--primary-color);
+   border: 2px var(--secondary-color) solid;
+   background-color: var(--secondary-color);
+}
+.main-container .gradient span:nth-child(1) a {
+   padding: .5rem .8rem;
+}
+.main-container .gradient span:nth-child(2) a {
+   padding: .5rem .8rem;
+}
+.main-container .gradient span:nth-child(3) a {
+   padding: .5rem .7rem;
+}
+.main-container .gradient span:nth-child(4) a {
+   padding: .5rem .7rem;
+}
+.main-container .gradient p {
+   font-weight: 400;
+   text-transform: uppercase;
+   font-weight: 700;
+   color: white;
+}
+
+.main-container .package-container {
+   grid-column: 2/4;
+   padding: 1.5rem 1.5rem;
+}
+.package-container h2 {
+   color: var(--primary-color);
+}
+.package-container p {
+   color: var(--tertiary-color);
+   line-height: 2;
+   font-size: 1rem;
+   font-weight: 400;
+}
+.package-container .package {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1rem;
+   margin: 2rem 0 1rem 0;
+}
+.package-container .package .card {
+   border: 1px var(--tertiary-color) solid;
+   border-radius: .3rem;
+   padding: 1rem;
+}
+.package-container .package .card:hover {
+   background-color: #fcf0ec;
+   border: 1px var(--primary-color) solid;
+   transition: all .8s ease;
+}
+.package-container .package .card p {
+   font-size: 1.1rem;
+   font-weight: 400;
+}
+.package-container .package .card i {
+   font-size: 1.5rem;
+   margin-bottom: 2rem;
+}
+.package-container .toggle-container {
+   width: 100%;
+   background-color: #ddd;
+   margin: .5rem 0;
+   padding: .5rem;
+   border-radius: .3rem;
+}
+.package-container .price-option {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.package-container .price-option input {
+   display: none;
+}
+.package-container .price-option small {
+   font-size: 1rem;
+   font-weight: 400;
+}
+.package-container .price-option label {
+   margin: 0 10px;
+   height: 30px;
+   width: 60px;
+   border: 1px var(--primary-color) solid;
+   background-color: var(--primary-color);
+   border-radius: 50px;
+   position: relative;
+   cursor: pointer;
+}
+.price-option label .selected {
+   position: absolute;
+   left: 3px;
+   top: 50%;
+   transform: translateY(-50%);
+   height: 86%;
+   width: 45%;
+   background-color: white;
+   border-radius: 50%;
+   transition: all .3s ease-in;
+}
+.label.active .selected {
+   left: 28px;
+   background-color: var(--secondary-color);
+}
+.package-container #price-card .price {
+   display: none;
+}
+.package-container #price-card .price.initial-price {
+   display: inline;
+}
+.package-container .btn {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 6rem;
+}
+.package-container .btn a:nth-child(1) {
+   padding: .5rem 1rem;
+   border-radius: .3rem;
+   font-weight: 400;
+   color: var(--tertiary-color);
+}
+.package-container .btn a:nth-child(1):hover {
+   background-color: #f1e5e1;
+   color: brown;
+}
+.package-container .btn a:nth-child(2) {
+   background: var(--primary-color);
+   padding: .5rem 1rem;
+   border-radius: .3rem;
+   font-weight: 400;
+   color: white;
+}

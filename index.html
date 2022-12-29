@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="input.css">
+   <title>Subscription Plan</title>
+</head>
+<body>
+   <div class="main-container">
+      <div class="container">
+         <div class="contents">
+            <div class="gradient">
+               <ul>
+                  <span>
+                     <a href="#"><i class="fa-solid fa-1"></i></i></a>
+                     <p>Your Info</p>
+                  </span>
+                  <span>
+                     <a href="#"><i class="fa-solid fa-2"></i></a>
+                     <p>Select Plan</p>
+                  </span>
+                  <span>
+                     <a href="#"><i class="fa-solid fa-3"></i></a>
+                     <p>Ad-ons Plan</p>
+                  </span>
+                  <span>
+                     <a href="#"><i class="fa-solid fa-4"></i></a>
+                     <p>Summary</p>
+                  </span>
+               </ul>
+            </div>
+
+            <div class="package-container">
+               <h2>Select Your Plan</h2>
+               <p>You have the options of monthly or yearly billing.</p>
+
+               <div class="package">
+                  <div class="card card1" id="price-card">
+                     <i class="fa-solid fa-hat-cowboy yellow"></i>
+                     <p>Arcade</p>
+                     <h3>
+                        $
+                        <span class="price initial-price">9</span>
+                        <span class="price">81</span>
+                        /mo
+                     </h3>
+                  </div>
+
+                  <div class="card card1" id="price-card">
+                     <i class="fa-solid fa-gamepad orange"></i>
+                     <p>Advanced</p>
+                     <h3>
+                        $
+                        <span class="price initial-price">12</span>
+                        <span class="price">108</span>
+                        /mo
+                     </h3>
+                  </div>
+
+                  <div class="card card1" id="price-card">
+                     <i class="fa-solid fa-vr-cardboard purple"></i>
+                     <p>Pro</p>
+                     <h3>
+                        $
+                        <span class="price initial-price">15</span>
+                        <span class="price">135</span>
+                        /mo
+                     </h3>
+                  </div>
+               </div>
+
+               <div class="toggle-container">
+                  <div class="price-option">
+                     <small>Annual</small>
+                     <input type="checkbox" id="checkbox">
+                     <label for="checkbox" class="label">
+                        <div class="selected"></div>
+                     </label>
+                     <small>Monthly</small>
+                  </div>
+               </div>
+
+               <div class="btn">
+                  <a href="#">Go Back</a>
+                  <a href="#">Next Step</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="main.js"></script>
+</body>
+</html>
